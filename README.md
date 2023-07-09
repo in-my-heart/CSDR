@@ -16,5 +16,5 @@ Download the dataset (AWA2/CUB/FLO/SUN) from the work of [Xian et al. (CVPR2017)
 
 ### Train and Test
 
-Run `python train.py` with the following args:
+Run `python train.py` 
 
