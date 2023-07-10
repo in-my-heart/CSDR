@@ -181,7 +181,7 @@ def train():
             swap_loss = swap_loss + mse_loss(x4, X)
 
         cluster_ids_x1, cluster_centers1 = kmeans(
-            X=F.normalize(X), num_clusters=opt.centernum, distance='euclidean', device=torch.device('cuda:0')
+            X=X, num_clusters=opt.centernum, distance='cosine', device=torch.device('cuda:0')
         )
 
         # kmeans = KMeans(n_clusters=opt.centernum, mode='cosine', verbose=1)
